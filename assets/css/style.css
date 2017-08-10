@@ -150,6 +150,14 @@ body {
 }
 
 .workshop-section-desc {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 40px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.workshop-section-button {
     text-align: center;
     font-weight: 300;
     font-size: 24px;
@@ -158,7 +166,6 @@ body {
     margin: auto;
     padding-bottom: 40px;
 }
-
 .fotowksp-screen {
     padding-top: 60px;
     padding-bottom: 40px;
@@ -175,6 +182,10 @@ body {
 .kegiatan-section-sub {
     padding-top: 10px;
     color: grey;
+}
+
+.kegiatan-features {
+    -webkit-padding-start: 0;
 }
 
 .kegiatan-table {
