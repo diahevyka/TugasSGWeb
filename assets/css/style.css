@@ -134,6 +134,45 @@ body {
     max-width: 100%;
 }
 
+.dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
 .workshop-section {
     max-width: 1400px;
     margin: auto;
@@ -166,6 +205,18 @@ body {
     margin: auto;
     padding-bottom: 40px;
 }
+
+.workshop-features {
+    font-size: 15px;
+    text-align: left;
+}
+
+.workshop-desc {
+    font-size: 12px;
+    text-align: left;
+    letter-spacing: 1;
+}
+
 .fotowksp-screen {
     padding-top: 60px;
     padding-bottom: 40px;
@@ -351,132 +402,4 @@ a:hover {
   left: 0;
   bottom: 0;
   padding: 20px;
-}
-.team {
-    padding-bottom: 50px;
-    padding-top: 60px;
-}
-
-.team-container {
-    text-align: center;
-    margin: auto;
-    max-width: 920px;
-}
-
-.team-section-header {
-    padding-bottom: 90px;
-}
-
-.team-member {
-    text-align: center;
-    padding-bottom: 60px;
-}
-
-.team-member-position {
-    color: #747474;
-}
-
-.team-member-text {
-    padding-top: 25px;
-}
-
-.team-social-icon {
-    padding: 7px;
-}
-
-.blue-section {
-    background-color: #0ABCEB;
-    color: white;
-    margin: auto;
-    text-align: center;
-    padding-top: 25px;
-    padding-bottom: 40px;
-}
-
-.blue-section-subtext {
-    max-width: 200px;
-    max-width: 250px;
-    line-height: 22px;
-    font-size: 15px;
-    margin: auto;
-}
-
-.email-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.email-input {
-    background-color: white;
-    border-radius: 10px;
-    border: 1px solid #fff;
-    width: 210px;
-    height: 51px;
-    color: #808080;
-    margin-top: 20px;
-    border: none;
-}
-
-.submit-btn {
-    background-color: #25F18B;
-    border-radius: 10px;
-    color: #fff;
-    height: 51px;
-    width: 120px;
-    margin-top: 20px;
-    margin-left: 3px;
-    -webkit-transition-duration: 0.4s;
-    /* Safari */
-    transition-duration: 0.4s;
-}
-
-.submit-btn:hover {
-    background-color: #6affb4;
-    color: white;
-    border-radius: 20px;
-    -webkit-box-shadow: -1px 9px 46px -17px rgba(43, 43, 43, 1);
-    -moz-box-shadow: -1px 9px 46px -17px rgba(43, 43, 43, 1);
-    box-shadow: -1px 9px 46px -17px rgba(43, 43, 43, 1);
-}
-
-#newsletter-spinner {
-    display: none;
-}
-
-.email-form-div {
-    max-width: 60px;
-    margin: auto;
-}
-
-.footer {
-    background-color: #464646;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.webscope-text {
-    color: white;
-    font-size: 12px;
-    padding-right: 7px;
-}
-
-.webscope {
-    text-align: center;
-    margin-top: -5px;
-}
-
-.social-links {
-    float: none;
-    text-align: center;
-    padding-top: 10px;
-}
-
-.social-link {
-    margin-right: 15px;
-}
-
-.strips {
-    position: absolute;
-    max-width: 1280px;
 }
