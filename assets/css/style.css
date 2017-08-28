@@ -207,8 +207,16 @@ body {
     text-align: center;
 }
 
-.fotowksp-section-header {
-    padding-bottom: 25px;
+.workshop-section-header {
+    padding-top: 50px;
+    font-weight: bold;
+    text-align: center;
+    /*padding-bottom: 30px;*/
+}
+
+.ftworkshop-section-header {
+    padding-top: 25px;
+    /*padding-bottom: 30px;*/
 }
 
 .workshop-section-desc {
@@ -240,8 +248,8 @@ body {
     line-height: 150%;
 }
 
-.fotowksp-screen {
-    padding-top: 60px;
+.row2-foto-desc {
+    padding-top: 30px;
     padding-bottom: 40px;
 }
 
@@ -250,7 +258,7 @@ body {
 }
 
 .kegiatan-section-header {
-    padding-top: 35px;
+    padding-top: 70px;
 }
 
 .kegiatan-section-sub {
@@ -307,7 +315,6 @@ ul {
 }
 
 .pilih-title {
-    font-size: 35px;
     padding-bottom: 10px;
 }
 
