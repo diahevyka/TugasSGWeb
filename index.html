@@ -12,6 +12,8 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
 	<title>BasisDataLab</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<!-- Navigasi -->
@@ -117,48 +119,58 @@
 		<!-- ====================================================== -->
 
 		<!-- WORKSHOP -->
-		<div  id="workshop" class="workshop-section">
+		<div id="workshop" class="workshop-section">
 			<div class="container">
-				<div class="row">
-					<h2 class="workshop-section-header light">WORKSHOP</h2>
-				</div>
-				<div class="row row2-foto-desc">
+			<h2 class="text-center">WORKSHOP</h2>
+				<div class="row" style="margin: 60px 0">
 					<div class="col-sm-6">
 						<img class="img-responsive besar-foto" src="assets/images/workshop.jpg">
 					</div>
 					<div class="col-sm-6">
 						<div class="workshop-section-desc">
-								<p class="workshop-desc">Workshop yang diadakan oleh laboratorium basis data merupakan kegiatan tahunan yang akan mengajarka pemrograman web kepada pesertanya, selain itu workshop ini akan diajarkan langsung bagaimana membuat sebuah website dan akan dibimbing oleh anggota basis data lab.</p>
-								<h4>Pengisi Materi</h4>
-								<ul class="kegiatan-features workshop-features">
-									<li>Belajar bersama</li>
-								</ul>
-								<h4>Kurikulum</h4>
-								<ul class="kegiatan-features workshop-features">
-									<li>Belajar bersama</li>
-								</ul>
-								<h4>Kegiatan</h4>
-								<ul class="kegiatan-features workshop-features">
-									<li>Belajar bersama</li>
-								</ul>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="workshop-section-button">
-						<div class="pilih-price-div text-center">
-							<div class="choose-pilih-div">
-								<a class="pilih-btn light" href="#">
-									Daftar
-								</a>
-							</div>
+							<p class="workshop-desc">Workshop yang diadakan oleh laboratorium basis data merupakan kegiatan tahunan yang akan mengajarka pemrograman web kepada pesertanya, selain itu workshop ini akan diajarkan langsung bagaimana membuat sebuah website dan akan dibimbing oleh anggota basis data lab.</p>
+							<h4>Pengisi Materi</h4>
+							<ul class="kegiatan-features workshop-features">
+								<li>Belajar bersama</li>
+							</ul>
+							<h4>Kurikulum</h4>
+							<ul class="kegiatan-features workshop-features">
+								<li>Belajar bersama</li>
+							</ul>
+							<h4>Kegiatan</h4>
+							<ul class="kegiatan-features workshop-features">
+								<li>Belajar bersama</li>
+							</ul>
+							<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#daftarworkshop">
+							  Daftar!
+							</button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</div>
+
+
+		<!-- Modal -->
+		<div id="daftarworkshop" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+		    <!-- Modal content-->
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <h4 class="modal-title">Modal Header</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p>Some text in the modal.</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+
+		  </div>
+		</div>
 
 <!-- ====================================================== -->
 
@@ -171,6 +183,13 @@
 		<div class="col-sm-6">
 			<div class="pengumuman-table">
 				<h3 class="light">Study Group</h3>
+				<br>
+				<br>
+				<br>
+				<br>
+				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#daftarSG">
+				  Daftar!
+				</button>
 			</div>
 		</div>
 
@@ -178,11 +197,37 @@
 			<div class="pengumuman-table">
 				<h3 class="light">Reseach Group</h3>
 				<br>
+				<br>
+				<br>
+				<br>
+				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#daftarRG">
+				Daftar!
+				</button>
 			</div>
 		</div>
-
 	</div>
 
+	<!-- Modal -->
+		<div id="daftarSG" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+		    <!-- Modal content-->
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <h4 class="modal-title">Modal Header</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p>Some text in the modal.</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+
+		  </div>
+		</div>
+<!-- =============================================================================================== -->
 	<!-- MEMBER SG-->
 	<div class="member-background" id="sg">
 		<h2 class="member-section-header light text-center">Member Study Group Lab Basis Data</h2>
@@ -496,5 +541,7 @@
 	</div>
 
 </div>
+	<!-- Latest compiled and minified JavaScript -->
+	<script type="text/javascript" src="assets/js/index.js"></script>
 </body>
 </html>
