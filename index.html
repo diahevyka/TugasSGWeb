@@ -5,154 +5,263 @@
 	<!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/> -->
 	<link rel="shortcut icon" type="image/png" href="assets/images/logoBasdat.png"/>
 	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
 	rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/style.css"/>
 	<link rel="stylesheet" href="assets/css/responsive.css"/>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
 	<title>BasisDataLab</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<!-- Navigasi -->
-	<div class="navbar navbar-default navbar-fixed-top">
-		<div class="container-fluid ">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<a class="navbar-brand" href="#">
-					<img id="brand-img" alt="Brand" src="assets/images/basdat.png"></a>
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#">Brand</a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="#egiatan">Kegiatan</a></li>
+	        <li><a href="#workshop">Workshop</a></li>
+	        <li><a href="#pengumuman">Pengumuman</a></li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Member <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="#sg">Study Group</a></li>
+	            <li><a href="#rg">Reseach Group</a></li>
+	          </ul>
+	        </li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+	<!-- HOME -->
+	<div class="hero-background home-section-header">
+		<div class="container">
+			<div class="hero row">
+				<div class="hero-right col-sm-6 col-sm-6">
+					<h1 class="header-headline bold"> Laboratorium Basis Data <br></h1>
+					<h4 class="home-penjelasan light"> Laoratorium Basis Data merupakan fasilitas yang ada pada Fakultas Informatika Telkom University. Laboratrium ini berada pada Gedung Kultubai Selatan Lantai 2 Ruang 5(F205). Laboratorium ini berada dibawah KK(Kompetensi Keahlian) SIDE.</h4>
+					<br>
+					<h4 class="home-penjelasan light"> Kegiatan di Lab Basis data ini sangat banyak, antara lain Reseach Group, Study Group, Human Resech dan Workshop.</h4>
 				</div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#kegiatan">Kegiatan</a></li>
-						<li><a href="#workshop">Workshop</a></li>
-						<li><a href="#pengumuman">Pengumuman</a></li>
-						<li class="dropdown">
-							<a class="dropbtn">Member <span class="caret"></span>
-							</a>
-							<ul class="dropdown-content" aria-labelledby="dropdownMenu1">
-								<li><a href="#sg">Study Group</a></li>
-								<li><a href="#rg">Reseach Group</a></li>
-							</ul>
-						</li>
+
+				<!-- Foto Basdat -->
+				<div class="col-sm-6 col-sm-6 home">
+					<img class="home-screen img-responsive" src="assets/images/homepoto.jpg"/>
+				</div>
+
+			</div><!--home-->
+		</div><!-- home container -->
+	</div> <!-- home background -->
+
+	<!-- ====================================================== -->
+
+	<!-- KEGIATAN -->
+	<div id="kegiatan" class="kegiatan-background">
+		<h2 class="kegiatan-section-header light text-center bold">KEGIATAN LABORATORIUM BASIS DATA</h2>
+		<h4 class="kegiatan-section-sub text-center light">Berikut ini merupakan kegiatan di laboratorium basis data</h4>
+
+		<div class="kegiatan-table row">
+			<div class="col-sm-4">
+				<div class="pilih">
+					<h3 class="pilih-title light">Reseach Group</h3>
+					<br>
+					<br>
+					<ul class="kegiatan-features">
+						<li>Mengadakan riset</li>
+						<li>Belajar bersama</li>
 					</ul>
-				</div><!-- /.navbar-collapse -->
-			</div><!-- /.container-fluid -->
-		</div>
-		<!-- </nav> -->
-
-		<!-- HOME -->
-		<div class="hero-background home-section-header">
-			<div class="container">
-				<div class="hero row">
-					<div class="hero-right col-sm-6 col-sm-6">
-						<h1 class="header-headline bold"> Laboratorium Basis Data <br></h1>
-						<h4 class="home-penjelasan light"> Laoratorium Basis Data merupakan fasilitas yang ada pada Fakultas Informatika Telkom University. Laboratrium ini berada pada Gedung Kultubai Selatan Lantai 2 Ruang 5(F205). Laboratorium ini berada dibawah KK(Kompetensi Keahlian) SIDE.</h4>
-						<br>
-						<h4 class="home-penjelasan light"> Kegiatan di Lab Basis data ini sangat banyak, antara lain Reseach Group, Study Group, Human Resech dan Workshop.</h4>
-					</div>
-
-					<!-- Foto Basdat -->
-					<div class="col-sm-6 col-sm-6 home">
-						<img class="home-screen img-responsive" src="assets/images/homepoto.jpg"/>
-					</div>
-
-				</div><!--home-->
-			</div><!-- home container -->
-		</div> <!-- home background -->
-
-		<!-- ====================================================== -->
-
-		<!-- KEGIATAN -->
-		<div id="kegiatan" class="kegiatan-background">
-			<h2 class="kegiatan-section-header light text-center bold">KEGIATAN LABORATORIUM BASIS DATA</h2>
-			<h4 class="kegiatan-section-sub text-center light">Berikut ini merupakan kegiatan di laboratorium basis data</h4>
-
-			<div class="kegiatan-table row">
-				<div class="col-sm-4">
-					<div class="pilih">
-						<h3 class="pilih-title light">Reseach Group</h3>
-						<br>
-						<br>
-						<ul class="kegiatan-features">
-							<li>Mengadakan riset</li>
-							<li>Belajar bersama</li>
-						</ul>
-					</div>
 				</div>
-
-				<div class="col-sm-4">
-					<div class="mid-pilih">
-						<h3 class="pilih-title light">Study Group</h3>
-						<br>
-						<br>
-						<ul class="kegiatan-features">
-							<li>Belajar bersama</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="col-sm-4">
-					<div class="pilih">
-						<h3 class="pilih-title light">Human Reseach</h3>
-						<br>
-						<br>
-						<ul class="kegiatan-features">
-							<li>Belajar bersama</li>
-						</ul>
-					</div>
-				</div>
-
-
 			</div>
-		</div> <!-- Kegiatan selesai -->
 
-		<!-- ====================================================== -->
+			<div class="col-sm-4">
+				<div class="mid-pilih">
+					<h3 class="pilih-title light">Study Group</h3>
+					<br>
+					<br>
+					<ul class="kegiatan-features">
+						<li>Belajar bersama</li>
+					</ul>
+				</div>
+			</div>
 
-		<!-- WORKSHOP -->
-		<div id="workshop" class="workshop-section">
-			<div class="container">
-				<h2 class="text-center workshop-section-header">WORKSHOP</h2>
-				<div class="row" style="margin: 60px 0">
-					<div class="col-sm-6">
-						<img class="img-responsive besar-foto" src="assets/images/workshop.jpg">
+			<div class="col-sm-4">
+				<div class="pilih">
+					<h3 class="pilih-title light">Human Reseach</h3>
+					<br>
+					<br>
+					<ul class="kegiatan-features">
+						<li>Belajar bersama</li>
+					</ul>
+				</div>
+			</div>
+
+
+		</div>
+	</div> <!-- Kegiatan selesai -->
+
+	<!-- ====================================================== -->
+
+	<!-- WORKSHOP -->
+	<div id="workshop" class="workshop-section">
+		<div class="container">
+			<h2 class="text-center workshop-section-header">WORKSHOP</h2>
+			<div class="row" style="margin: 60px 0">
+				<div class="col-sm-6">
+					<img class="img-responsive besar-foto" src="assets/images/workshop.jpg">
+				</div>
+				<div class="col-sm-6">
+					<div class="workshop-section-desc">
+						<p class="workshop-desc">Workshop yang diadakan oleh laboratorium basis data merupakan kegiatan tahunan yang akan mengajarka pemrograman web kepada pesertanya, selain itu workshop ini akan diajarkan langsung bagaimana membuat sebuah website dan akan dibimbing oleh anggota basis data lab.</p>
+						<h4>Pengisi Materi</h4>
+						<ul class="kegiatan-features workshop-features">
+							<li>Belajar bersama</li>
+						</ul>
+						<h4>Kurikulum</h4>
+						<ul class="kegiatan-features workshop-features">
+							<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#kurikulum">
+							Lihat disini!
+						</button>
+						</ul>
+						<h4>Kegiatan</h4>
+						<ul class="kegiatan-features workshop-features">
+							<li>Belajar bersama</li>
+						</ul>
+						<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#daftarworkshop">
+							Daftar!
+						</button>
 					</div>
-					<div class="col-sm-6">
-						<div class="workshop-section-desc">
-							<p class="workshop-desc">Workshop yang diadakan oleh laboratorium basis data merupakan kegiatan tahunan yang akan mengajarka pemrograman web kepada pesertanya, selain itu workshop ini akan diajarkan langsung bagaimana membuat sebuah website dan akan dibimbing oleh anggota basis data lab.</p>
-							<h4>Pengisi Materi</h4>
-							<ul class="kegiatan-features workshop-features">
-								<li>Belajar bersama</li>
-							</ul>
-							<h4>Kurikulum</h4>
-							<ul class="kegiatan-features workshop-features">
-								<li>Belajar bersama</li>
-							</ul>
-							<h4>Kegiatan</h4>
-							<ul class="kegiatan-features workshop-features">
-								<li>Belajar bersama</li>
-							</ul>
-							<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#daftarworkshop">
-								Daftar!
-							</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Modal -->
+	<div id="daftarworkshop" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Daftar Workshop</h4>
+				</div>
+				<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label for="email">Email</label>
+								<input type="email" class="form-control" id="email" placeholder="Email">
+							</div>
+							<div class="form-group">
+								<label for="nama">Nama</label>
+								<input type="text" class="form-control" id="nama" placeholder="Nama">
+							</div>
+							<div class="form-group">
+								<label for="nim">NIM</label>
+								<input type="text" class="form-control" id="nim" placeholder="NIM">
+							</div>
+							<div class="form-group">
+								<label for="password">Password</label>
+								<input type="password" class="form-control" id="password" placeholder="password">
+							</div>
+							<div class="form-group">
+								<label for="inputKHS">File KHS</label>
+								<input type="file" id="inputKHS">
+								<p class="help-block">Example block-level help text here.</p>
+							</div>
+							<div class="form-group">
+								<label for="inputCV">File CV</label>
+								<input type="file" id="inputCV">
+								<p class="help-block">Example block-level help text here.</p>
+							</div>
+							<div class="form-group">
+								<label for="inputResume">File Resume</label>
+								<input type="file" id="inputResume">
+								<p class="help-block">Example block-level help text here.</p>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> Check me out
+								</label>
+							</div>
+							<button type="submit" class="btn btn-default">Submit</button>
+						</form>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 						</div>
 					</div>
+			</div>
+
+		</div>
+	</div>
+
+
+	<div id="kurikulum" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Kurikulum Workshop</h4>
+				</div>
+				<div class="modal-body">
+						<p>hahahahahahaha</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- ====================================================== -->
+
+	<!-- PENGUMUMAN -->
+	<div class="pengumuman-background container" id="pengumuman">
+		<h2 class="pengumuman-section-header text-center bold">PENGUMUMAN LABORATORIUM BASIS DATA</h2>
+		<h4 class="pengumuman-section-sub text-center light">Pengumuman pendaftaran Laboratorium Basisdata:</h4>
+		<!-- <h4 class="kegiatan-section-sub text-center light">Berikut ini merupakan kegiatan di laboratorium basis data</h4> -->
+		<div class="kegiatan-table row">
+			<div class="col-sm-6">
+				<div class="pengumuman-table">
+					<h3 class="light">Study Group</h3>
+					<br>
+					<br>
+					<br>
+					<br>
+					<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#daftarSG">
+						Daftar!
+					</button>
+				</div>
+			</div>
+
+			<div class="col-sm-6">
+				<div class="pengumuman-table">
+					<h3 class="light">Reseach Group</h3>
+					<br>
+					<br>
+					<br>
+					<br>
+					<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#daftarRG">
+						Daftar!
+					</button>
 				</div>
 			</div>
 		</div>
 
-
 		<!-- Modal -->
-		<div id="daftarworkshop" class="modal fade" role="dialog">
+		<div id="daftarSG" class="modal fade" role="dialog">
 			<div class="modal-dialog">
 
 				<!-- Modal content-->
@@ -162,205 +271,111 @@
 						<h4 class="modal-title">Modal Header</h4>
 					</div>
 					<div class="modal-body">
-							<form>
-								<div class="form-group">
-									<label for="email">Email</label>
-									<input type="email" class="form-control" id="email" placeholder="Email">
-								</div>
-								<div class="form-group">
-									<label for="nama">Nama</label>
-									<input type="text" class="form-control" id="nama" placeholder="Nama">
-								</div>
-								<div class="form-group">
-									<label for="nim">NIM</label>
-									<input type="text" class="form-control" id="nim" placeholder="NIM">
-								</div>
-								<div class="form-group">
-									<label for="password">Password</label>
-									<input type="password" class="form-control" id="password" placeholder="password">
-								</div>
-								<div class="form-group">
-									<label for="inputKHS">File KHS</label>
-									<input type="file" id="inputKHS">
-									<p class="help-block">Example block-level help text here.</p>
-								</div>
-								<div class="form-group">
-									<label for="inputCV">File CV</label>
-									<input type="file" id="inputCV">
-									<p class="help-block">Example block-level help text here.</p>
-								</div>
-								<div class="form-group">
-									<label for="inputResume">File Resume</label>
-									<input type="file" id="inputResume">
-									<p class="help-block">Example block-level help text here.</p>
-								</div>
-								<div class="checkbox">
-									<label>
-										<input type="checkbox"> Check me out
-									</label>
-								</div>
-								<button type="submit" class="btn btn-default">Submit</button>
-							</form>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<form>
+							<div class="form-group">
+								<label for="email">Email</label>
+								<input type="email" class="form-control" id="email" placeholder="Email">
 							</div>
+							<div class="form-group">
+								<label for="nama">Nama</label>
+								<input type="text" class="form-control" id="nama" placeholder="Nama">
+							</div>
+							<div class="form-group">
+								<label for="nim">NIM</label>
+								<input type="text" class="form-control" id="nim" placeholder="NIM">
+							</div>
+							<div class="form-group">
+								<label for="password">Password</label>
+								<input type="password" class="form-control" id="password" placeholder="password">
+							</div>
+							<div class="form-group">
+								<label for="inputKHS">File KHS</label>
+								<input type="file" id="inputKHS">
+								<p class="help-block">Example block-level help text here.</p>
+							</div>
+							<div class="form-group">
+								<label for="inputCV">File CV</label>
+								<input type="file" id="inputCV">
+								<p class="help-block">Example block-level help text here.</p>
+							</div>
+							<div class="form-group">
+								<label for="inputResume">File Resume</label>
+								<input type="file" id="inputResume">
+								<p class="help-block">Example block-level help text here.</p>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> Check me out
+								</label>
+							</div>
+							<button type="submit" class="btn btn-default">Submit</button>
+						</form>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 						</div>
+					</div>
 				</div>
 
 			</div>
 		</div>
 
-		<!-- ====================================================== -->
+		<div id="daftarRG" class="modal fade" role="dialog">
+			<div class="modal-dialog">
 
-		<!-- PENGUMUMAN -->
-		<div class="pengumuman-background container" id="pengumuman">
-			<h2 class="pengumuman-section-header text-center bold">PENGUMUMAN LABORATORIUM BASIS DATA</h2>
-			<h4 class="pengumuman-section-sub text-center light">Pengumuman pendaftaran Laboratorium Basisdata:</h4>
-			<!-- <h4 class="kegiatan-section-sub text-center light">Berikut ini merupakan kegiatan di laboratorium basis data</h4> -->
-			<div class="kegiatan-table row">
-				<div class="col-sm-6">
-					<div class="pengumuman-table">
-						<h3 class="light">Study Group</h3>
-						<br>
-						<br>
-						<br>
-						<br>
-						<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#daftarSG">
-							Daftar!
-						</button>
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Modal Header</h4>
 					</div>
-				</div>
-
-				<div class="col-sm-6">
-					<div class="pengumuman-table">
-						<h3 class="light">Reseach Group</h3>
-						<br>
-						<br>
-						<br>
-						<br>
-						<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#daftarRG">
-							Daftar!
-						</button>
-					</div>
-				</div>
-			</div>
-
-			<!-- Modal -->
-			<div id="daftarSG" class="modal fade" role="dialog">
-				<div class="modal-dialog">
-
-					<!-- Modal content-->
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal">&times;</button>
-							<h4 class="modal-title">Modal Header</h4>
-						</div>
-						<div class="modal-body">
-							<form>
-								<div class="form-group">
-									<label for="email">Email</label>
-									<input type="email" class="form-control" id="email" placeholder="Email">
-								</div>
-								<div class="form-group">
-									<label for="nama">Nama</label>
-									<input type="text" class="form-control" id="nama" placeholder="Nama">
-								</div>
-								<div class="form-group">
-									<label for="nim">NIM</label>
-									<input type="text" class="form-control" id="nim" placeholder="NIM">
-								</div>
-								<div class="form-group">
-									<label for="password">Password</label>
-									<input type="password" class="form-control" id="password" placeholder="password">
-								</div>
-								<div class="form-group">
-									<label for="inputKHS">File KHS</label>
-									<input type="file" id="inputKHS">
-									<p class="help-block">Example block-level help text here.</p>
-								</div>
-								<div class="form-group">
-									<label for="inputCV">File CV</label>
-									<input type="file" id="inputCV">
-									<p class="help-block">Example block-level help text here.</p>
-								</div>
-								<div class="form-group">
-									<label for="inputResume">File Resume</label>
-									<input type="file" id="inputResume">
-									<p class="help-block">Example block-level help text here.</p>
-								</div>
-								<div class="checkbox">
-									<label>
-										<input type="checkbox"> Check me out
-									</label>
-								</div>
-								<button type="submit" class="btn btn-default">Submit</button>
-							</form>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label for="email">Email</label>
+								<input type="email" class="form-control" id="email" placeholder="Email">
 							</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-
-			<div id="daftarRG" class="modal fade" role="dialog">
-				<div class="modal-dialog">
-
-					<!-- Modal content-->
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal">&times;</button>
-							<h4 class="modal-title">Modal Header</h4>
-						</div>
-						<div class="modal-body">
-							<form>
-								<div class="form-group">
-									<label for="email">Email</label>
-									<input type="email" class="form-control" id="email" placeholder="Email">
-								</div>
-								<div class="form-group">
-									<label for="nama">Nama</label>
-									<input type="text" class="form-control" id="nama" placeholder="Nama">
-								</div>
-								<div class="form-group">
-									<label for="nim">NIM</label>
-									<input type="text" class="form-control" id="nim" placeholder="NIM">
-								</div>
-								<div class="form-group">
-									<label for="password">Password</label>
-									<input type="password" class="form-control" id="password" placeholder="password">
-								</div>
-								<div class="form-group">
-									<label for="inputKHS">File KHS</label>
-									<input type="file" id="inputKHS">
-									<p class="help-block">Example block-level help text here.</p>
-								</div>
-								<div class="form-group">
-									<label for="inputCV">File CV</label>
-									<input type="file" id="inputCV">
-									<p class="help-block">Example block-level help text here.</p>
-								</div>
-								<div class="form-group">
-									<label for="inputResume">File Resume</label>
-									<input type="file" id="inputResume">
-									<p class="help-block">Example block-level help text here.</p>
-								</div>
-								<div class="checkbox">
-									<label>
-										<input type="checkbox"> Check me out
-									</label>
-								</div>
-								<button type="submit" class="btn btn-default">Submit</button>
-							</form>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<div class="form-group">
+								<label for="nama">Nama</label>
+								<input type="text" class="form-control" id="nama" placeholder="Nama">
 							</div>
+							<div class="form-group">
+								<label for="nim">NIM</label>
+								<input type="text" class="form-control" id="nim" placeholder="NIM">
+							</div>
+							<div class="form-group">
+								<label for="password">Password</label>
+								<input type="password" class="form-control" id="password" placeholder="password">
+							</div>
+							<div class="form-group">
+								<label for="inputKHS">File KHS</label>
+								<input type="file" id="inputKHS">
+								<p class="help-block">Example block-level help text here.</p>
+							</div>
+							<div class="form-group">
+								<label for="inputCV">File CV</label>
+								<input type="file" id="inputCV">
+								<p class="help-block">Example block-level help text here.</p>
+							</div>
+							<div class="form-group">
+								<label for="inputResume">File Resume</label>
+								<input type="file" id="inputResume">
+								<p class="help-block">Example block-level help text here.</p>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> Check me out
+								</label>
+							</div>
+							<button type="submit" class="btn btn-default">Submit</button>
+						</form>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 						</div>
 					</div>
-
 				</div>
+
 			</div>
+		</div>
 
 
 			<!-- =============================================================================================== -->
@@ -677,7 +692,9 @@
 	</div>
 
 </div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
-<script type="text/javascript" src="assets/js/index.js"></script>
+	<script type="text/javascript" src="assets/js/index.js"></script>
 </body>
 </html>
