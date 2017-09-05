@@ -4,8 +4,8 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-#brand-img{
-    width: 30px;
+.brand-img{
+    width: 75px;
 }
 
 .navbar {
@@ -380,15 +380,6 @@ a:hover {
     box-shadow: 5px 8.7px 40px rgba(99, 117, 138, 0.3);
     border-radius: 7px;
 }
-/*
-.pengumuman-tabel li::before{
-    font-family: Material Icons;
-    color: #3aeb8c;
-    position: absolute;
-    left: -10px;
-    position: relative;
-
-}*/
 
 .member-background {
     padding-top: 40px;
