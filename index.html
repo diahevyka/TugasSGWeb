@@ -13,9 +13,9 @@
 
 	<title>BasisDataLab</title>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 	<!-- Navigasi -->
-	<nav class="navbar navbar-default navbar-fixed-top">
+	<nav class="navbar navbar-inverse navbar-default navbar-fixed-top">
 	  <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
@@ -117,10 +117,10 @@
 	<!-- WORKSHOP -->
 	<div id="workshop" class="workshop-section">
 		<div class="container">
-			<h2 class="text-center workshop-section-header">WORKSHOP</h2>
+			<h2 class="text-center workshop-section-header ">WORKSHOP</h2>
 			<div class="row" style="margin: 60px 0">
 				<div class="col-sm-6">
-					<img class="img-responsive besar-foto" src="assets/images/workshop.jpg">
+					<img class="img-responsive home-screen besar-foto img-thumbnail" alt="Cinque Terre" src="assets/images/workshop.jpg">
 				</div>
 				<div class="col-sm-6">
 					<div class="workshop-section-desc">
@@ -131,9 +131,9 @@
 						</ul>
 						<h4>Kurikulum</h4>
 						<ul class="kegiatan-features workshop-features">
-							<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#kurikulum">
-							Lihat disini!
-						</button>
+							<!-- <form method="get" action="assets/Learning PHP, MySQL, and JavaScript.pdf"> -->
+   								<button class="btn btn-primary btn-sm btn-lg btn-workshop-kurikulum" onclick="window.open('assets/Learning PHP, MySQL, and JavaScript.pdf')" type="submit">Download!</button>
+							<!-- </form> -->
 						</ul>
 						<h4>Kegiatan</h4>
 						<ul class="kegiatan-features workshop-features">
@@ -696,5 +696,31 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 	<script type="text/javascript" src="assets/js/index.js"></script>
+	<script>
+		$(document).ready(function(){
+		// Add smooth scrolling to all links
+		$("a").on('click', function(event) {
+
+			// Make sure this.hash has a value before overriding default behavior
+			if (this.hash !== "") {
+				// Prevent default anchor click behavior
+				event.preventDefault();
+
+				// Store hash
+				var hash = this.hash;
+
+				// Using jQuery's animate() method to add smooth page scroll
+				// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+				$('html, body').animate({
+					scrollTop: $(hash).offset().top
+				}, 800, function(){
+
+				// Add hash (#) to URL when done scrolling (default click behavior)
+				window.location.hash = hash;
+				});
+			} // End if
+		});
+		});
+</script>
 </body>
 </html>

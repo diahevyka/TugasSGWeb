@@ -47,12 +47,6 @@ body {
     z-index: 0;
 }
 
-.logo {
-    max-width: 100px;
-    padding-left: 50px;
-    padding-top: 0;
-    padding-bottom: 0;
-}
 
 .header-btn {
     background-color: #0ABCEB;
@@ -95,26 +89,6 @@ body {
     display: none;
 }
 
-.hero-btn {
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-    background-color: #25F18B;
-    border-radius: 10px;
-    border: 1px solid #25F18B;
-    width: 210px;
-    height: 51px;
-    color: white;
-    margin: 30px auto;
-}
-
-.hero-btn:hover {
-    background-color: #6affb4;
-    color: white;
-    border-radius: 20px;
-    -webkit-box-shadow: -1px 9px 46px -17px rgba(43, 43, 43, 1);
-    -moz-box-shadow: -1px 9px 46px -17px rgba(43, 43, 43, 1);
-    box-shadow: -1px 9px 46px -17px rgba(43, 43, 43, 1);
-}
 
 .header-headline {
     padding-top: 0;
@@ -214,6 +188,10 @@ body {
     font-size: 14px;
     text-align: justify;
     line-height: 150%;
+}
+
+.btn-workshop-kurikulum{
+    size: 75%;
 }
 
 .besar-foto{
