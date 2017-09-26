@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.brand-img{
+    width: 75px;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-fixed-top{
+    height: 50px;
+    text-align: center;
+    background: #F7F2F2;
+}
+
+.hero-background {
+    overflow: hidden;
+    position: relative;
+    background: -webkit-linear-gradient(117deg, rgb(96, 87, 246), rgb(216, 71, 99));
+    background: linear-gradient(117deg, rgb(96, 87, 246), rgb(216, 71, 99));
+    background: -webkit-radial-gradient(rgb(194, 74, 126), rgb(105, 86, 235));
+    background: radial-gradient(rgb(194, 74, 126), rgb(105, 86, 235));
+}
+
+.home-section-header {
+    padding-top: 80px;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.header {
+    padding-top: 5px;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    z-index: 0;
+}
+
+
+.header-btn {
+    background-color: #0ABCEB;
+    border-radius: 10px;
+    border: #0ABCEB;
+    float: right;
+    width: 195px;
+    height: 51px;
+    color: white;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    margin-top: -10px;
+}
+
+.header-btn:hover {
+    background-color: #58d5f7;
+    color: white;
+    border-radius: 20px;
+    -webkit-box-shadow: -1px 9px 46px -17px rgba(43, 43, 43, 1);
+    -moz-box-shadow: -1px 9px 46px -17px rgba(43, 43, 43, 1);
+    box-shadow: -1px 9px 46px -17px rgba(43, 43, 43, 1);
+}
+
+.hero {
+    position: relative;
+    /*z-index: 999;*/
+    padding-bottom: 60px;
+}
+
+.hero-right {
+    color: #fff;
+    text-align: center;
+}
+
+.home {
+    display: none;
+}
+
+.home-screen {
+    display: none;
+}
+
+
+.header-headline {
+    padding-top: 0;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.home-penjelasan {
+    /*text-align: center;*/
+    max-width: 500px;
+    line-height: 1.5;
+    margin: left;
+}
+
+.dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/*.dropdown:hover .dropdown-content {
+    display: block;
+}*/
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.workshop-section {
+    max-width: 1400px;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+.workshop-section-header {
+    padding-top: 50px;
+    font-weight: bold;
+    text-align: center;
+    /*padding-bottom: 30px;*/
+}
+
+.ftworkshop-section-header {
+    padding-top: 25px;
+    /*padding-bottom: 30px;*/
+}
+
+.workshop-section-desc {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 40px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.workshop-section-button {
+    text-align: center;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 40px;
+    max-width: 400px;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+.workshop-features {
+    font-size: 14px;
+    text-align: left;
+}
+
+.workshop-desc {
+    font-size: 14px;
+    text-align: justify;
+    line-height: 150%;
+}
+
+.btn-workshop-kurikulum{
+    size: 75%;
+}
+
+.besar-foto{
+    width: 500px;
+}
+
+.row2-foto-desc {
+    padding-top: 30px;
+}
+
+.kegiatan-background {
+    background-color: #F8F9F9;
+}
+
+.kegiatan-section-header {
+    padding-top: 70px;
+}
+
+.kegiatan-section-sub {
+    padding-top: 10px;
+    color: grey;
+}
+
+.kegiatan-features {
+    -webkit-padding-start: 0;
+}
+
+.kegiatan-table {
+    padding-top: 20px;
+    /*padding: 0 0 100px;*/
+    max-width: 1050px;
+    margin: auto;
+}
+
+.pilih {
+    text-align: center;
+    max-width: 390px;
+    margin: auto;
+    height: 330px;
+    padding: 36px 15px 45px;
+    position: relative;
+}
+
+.mid-pilih {
+    text-align: center;
+    max-width: 390px;
+    margin: auto;
+    height: 430px;
+    padding: 36px 15px 45px;
+    position: relative;
+    box-shadow: 5px 8.7px 40px rgba(99, 117, 138, 0.3);
+    border-radius: 7px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.pilih li {
+    position: relative;
+}
+
+.pilih li::before, .mid-pilih li::before {
+    font-family: Material Icons;
+    content: "check";
+    color: #3aeb8c;
+    position: absolute;
+    left: -10px;
+    position: relative;
+
+}
+
+.pilih-title {
+    padding-bottom: 10px;
+}
+
+/*.pilih-syarat {
+    font-size: 20px;
+    padding-bottom: 5px;
+    text-align: left;
+    padding-left: 20px;
+}*/
+
+.pilih-features {
+    -webkit-padding-start: 0;
+}
+
+.pilih-btn {
+    background-color: #0ABCEB;
+    border-radius: 10px;
+    border: #0ABCEB;
+    width: 164px;
+    height: 51px;
+    color: white;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    display: block;
+    padding: 15px;
+    margin: auto;
+    position: absolute;
+    left: calc(50% - 82px);
+    bottom: 50px;
+}
+
+.pilih-btn:hover {
+    background-color: #58d5f7;
+    color: white;
+    border-radius: 20px;
+    -webkit-box-shadow: -1px 9px 46px -17px rgba(43, 43, 43, 1);
+    -moz-box-shadow: -1px 9px 46px -17px rgba(43, 43, 43, 1);
+    box-shadow: -1px 9px 46px -17px rgba(43, 43, 43, 1);
+}
+
+/*a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.next {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.round {
+    border-radius: 50%;
+}
+*/
+
+.pengumuman-section-header {
+    padding-top: 1px;
+}
+
+.pengumuman-section-sub {
+    padding-top: 10px;
+    color: grey;
+}
+
+.pengumuman-background {
+    background-color: #F8F9F9;
+    padding-top: 80px;
+}
+
+/*.pengumuman-tabel li {
+    position: relative;
+}*/
+
+.pengumuman-table {
+    text-align: center;
+    max-width: 390px;
+    margin-top: 75px;
+    height: 230px;
+    padding: 36px 15px 45px;
+    position: relative;
+    box-shadow: 5px 8.7px 40px rgba(99, 117, 138, 0.3);
+    border-radius: 7px;
+}
+
+.btn-pengumuman{
+    margin-top: 25px;
+}
+
+.batas{
+    height: 100px;
+}
+
+.member-background {
+    padding-top: 40px;
+}
+
+.member-section-header {
+    padding-top: 0;
+}
+
+.member-section-sub {
+    padding-top: 10px;
+    color: grey;
+}
+
+.member-table {
+    padding: 0 0 100px;
+    max-width: 1050px;
+    margin: auto;
+}
+
+.member-item img {
+  width: 100%;
+  display: block;
+}
+
+.member-item:hover .member-hover {
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.member-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 40px;
+  left: 0;
+  background: rgba(220, 211, 209, 1);
+  opacity: 0;
+  visibility: 0;
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -ms-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+.member-hover .inside {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 20px;
+}
+
+.foto-member-tab{
+    margin-bottom: 10px;
+}

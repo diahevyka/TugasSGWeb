@@ -1,9 +1,17 @@
 //IMPORT
 const express = require('express')
 const app = express()
+const bodyParser = require('body-parser') //ambil nilai dari form front end
+const multer = require('multer') //handle file
+const upload = multer({dest: 'public/uploads/'}) //destinasi file ketika di upload user
+
+app.use(express.static('public'));
 
 //SETTER
 app.set('view engine','hbs')
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
 
 //ROUTES
 app.get('/route_biasa', function(request, response){
@@ -11,11 +19,17 @@ app.get('/route_biasa', function(request, response){
 })
 
 app.get('/',function(request,response){
-	let nama = 'Basisdata Lab'
+	response.render('index.hbs')
+})
 
-	response.render('hevyka',{
-		namahbs:nama
-	})
+app.post('/daftarsg', function(request,response){
+	console.log('hehehe');
+	console.log({body : request.body})
+})
+
+app.post('/daftarrg', function(request,response){
+	console.log('hehehe');
+	console.log({body : request.body})
 })
 
 app.get('/user/:id/show',function(request,response){
