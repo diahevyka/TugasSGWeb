@@ -3,7 +3,16 @@ const express = require('express')
 const app = express()
 const bodyParser = require('body-parser') //ambil nilai dari form front end
 const multer = require('multer') //handle file
-const upload = multer({dest: 'public/uploads/'}) //destinasi file ketika di upload user
+
+const storage = multer.diskStorage({
+	destination: function(request, file, cb){
+		cb(null,'public/uploads/')
+	},
+	filename: function(request, file, cb){
+		cb(null, file.originalname)
+	}
+})
+const upload = multer({storage}) //destinasi file ketika di upload user
 
 app.use(express.static('public'));
 
@@ -22,14 +31,16 @@ app.get('/',function(request,response){
 	response.render('index.hbs')
 })
 
-app.post('/daftarsg', function(request,response){
+app.post('/daftarsg', upload.any(), function(request,response){
 	console.log('hehehe');
 	console.log({body : request.body})
+	console.log({ files: request.files})
 })
 
-app.post('/daftarrg', function(request,response){
+app.post('/daftarrg', upload.any(), function(request,response){
 	console.log('hehehe');
 	console.log({body : request.body})
+	console.log({files : request.files})
 })
 
 app.get('/user/:id/show',function(request,response){
