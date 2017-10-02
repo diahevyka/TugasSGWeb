@@ -12,7 +12,7 @@ const storage = multer.diskStorage({
 		cb(null, file.originalname)
 	}
 })
-const upload = multer({storage}) //destinasi file ketika di upload user
+const upload = multer({storage : storage}) //destinasi file ketika di upload user
 
 app.use(express.static('public'));
 
@@ -36,6 +36,7 @@ app.post('/daftarsg', upload.any(), function(request,response){
 	console.log({body : request.body})
 	console.log({ files: request.files})
 })
+
 
 app.post('/daftarrg', upload.any(), function(request,response){
 	console.log('hehehe');
