@@ -28,8 +28,17 @@ app.use(bodyParser.urlencoded({extended: true}));
 //TABEL
 
 const mahasiswaSchema = mongoose.Schema({
-    name: String,
-    nim : String
+    nama: String,
+    nim : String,
+    angkatan : String,
+    jurusan : String,
+    email : String,
+    notel : String,
+    pilihan : String,
+    khs : String,
+    cv : String,
+    resume : String,
+    foto : String
 });
 
 //Model
@@ -45,10 +54,12 @@ app.post('/daftarsg', upload.any(), function(request,response){
 	/*console.log('hehehe');
 	console.log({body : request.body})
 	console.log({ files: request.files})*/
-	let newMahasiswa = new Mahasiswa({ name : "Hevyka"})
+	let body = request.body
+	Object.assign(body, {pilihan : 'SG'})
+	let newMahasiswa = new Mahasiswa(request.body)
 	newMahasiswa.save()
 
-	response.redirectt('/')
+	response.redirect('/')
 })
 
 
@@ -56,10 +67,12 @@ app.post('/daftarrg', upload.any(), function(request,response){
 	/*console.log('hehehe');
 	console.log({body : request.body})
 	console.log({files : request.files})*/
-	let newMahasiswa = new Mahasiswa({ name : "Hevyka"})
+	let body = request.body
+	Object.assign(body, {pilihan : 'RG'})
+	let newMahasiswa = new Mahasiswa(request.body)
 	newMahasiswa.save()
 
-	response.redirectt('/')
+	response.redirect('/')
 })
 
 app.get('/user/:id/show',function(request,response){
